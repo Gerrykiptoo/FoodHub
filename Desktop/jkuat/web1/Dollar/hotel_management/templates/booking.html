@@ -1,0 +1,17 @@
+<h1>Available Rooms</h1>
+<ul>
+    {% for room in rooms %}
+        <li>
+            Room {{ room.room_number }} - {{ room.type }} - ${{ room.price }}
+            <form method="POST" action="{{ url_for('book', room_id=room.id) }}">
+                <label for="check_in">Check-in:</label>
+                <input type="date" name="check_in" required>
+                
+                <label for="check_out">Check-out:</label>
+                <input type="date" name="check_out" required>
+                
+                <button type="submit">Book</button>
+            </form>
+        </li>
+    {% endfor %}
+</ul>
