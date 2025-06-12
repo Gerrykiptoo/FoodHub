@@ -1,0 +1,38 @@
+### Test Root Endpoint
+GET http://localhost:8383/
+
+
+### Test Dashboard Endpoint
+GET http://localhost:8383/dashboard/
+
+
+### Test Data API Endpoint
+GET http://localhost:8383/api/data
+
+
+### Add New User
+POST http://localhost:8383/api/data
+Content-Type: application/json
+
+{
+  "name": "Gerry Biwott",
+  "email": "gerry@example.com",
+  "age": 28
+}
+
+
+### Test Invalid Endpoint (404 Check)
+GET http://localhost:8383/api/nonexistent
+
+
+### Update User (Example)
+PUT http://localhost:8383/api/data/1
+Content-Type: application/json
+
+{
+  "name": "Gerry K. Biwott"
+}
+
+
+### Delete User (Example)
+DELETE http://localhost:8383/api/data/1 
