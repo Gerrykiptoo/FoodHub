@@ -1,10 +1,11 @@
 # Node modules for both frontend and backend
-Frontend/node_modules/
-Backend/node_modules/
+react/Foodhub/Frontend/node_modules/
+react/Foodhub/Backend/node_modules/
+
 
 # Vite build output
-Frontend/dist/
 
+react/Foodhub/Frontend/dist/
 # Common OS files
 .DS_Store
 *.log
