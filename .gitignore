@@ -1,0 +1,10 @@
+# Node modules for both frontend and backend
+Frontend/node_modules/
+Backend/node_modules/
+
+# Vite build output
+Frontend/dist/
+
+# Common OS files
+.DS_Store
+*.log
